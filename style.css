@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    font-family: "Bricolage Grotesque", sans-serif;
+    background-color: #02000e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.container {
+    width: 35%;
+    height: auto;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(26, 25, 25, 0.1);
+    border: 1px solid;
+    text-align: center;
+}
+
+h1 {
+    color: #0e034d;
+    margin-bottom: 2.5rem;
+}
+
+p{
+    color: #8b8b8b;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 1rem;
+}
+
+input {
+    width: calc(100% - 22px);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border: 1px solid #c7c0ee;
+    border-radius: 0.5rem;
+
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input::placeholder{
+    font-size: 14px;
+    color: #bebdbd;
+}
+
+button {
+    padding: 1rem 5rem;
+    background-color: #0e034d;
+    color: white;
+    border: none;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background-color: #160288;
+}
+
+#feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#attemptsLeft {
+    margin-top: 10px;
+    color: #888;
+}
+
+ /* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 1rem;
+    }
+
+    input {
+        padding: 1rem;
+    }
+
+    button{
+        padding: 1rem 2rem;
+    }
+}
+
+  /* Media query for even smaller screens */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 4rem 1rem;
+        width: 90%;
+        height: auto;
+    }
+
+    .container, h1{
+        font-size: 2rem;
+    }
+
+
+    .container, p{
+        font-size: 0.8rem;
+        text-align: center;
+
+    }
+    input {
+        padding: 1rem;
+    }
+
+    button{
+        padding: 1rem 2rem;
+    }
+}
